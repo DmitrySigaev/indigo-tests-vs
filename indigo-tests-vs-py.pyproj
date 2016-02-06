@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{1f913084-0243-4cdb-a720-e39309737efc}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>indigo-tests\api\tests\basic\basic.py</StartupFile>
+    <StartupFile>indigo-tests\api\tests\basic\buffer_string_load_iterate.py</StartupFile>
     <SearchPath>./Indigo/api/python;./indigo-tests/api/common</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
