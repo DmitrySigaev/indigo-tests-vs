@@ -3,20 +3,21 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1f913084-0243-4cdb-a720-e39309737efc}</ProjectGuid>
+    <ProjectGuid>{880f825d-1ccf-4fe0-8749-48def0131f4c}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>indigo-tests\api\tests\basic\buffer_string_load_iterate.py</StartupFile>
-    <SearchPath>./Indigo/api/python;./indigo-tests/api/common</SearchPath>
+    <StartupFile>Indigo\build_scripts\indigo-release-libs.py</StartupFile>
+    <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterId>{9377fd1f-d17e-490c-8bcd-0f04c87495c5}</InterpreterId>
     <InterpreterVersion>2.7</InterpreterVersion>
-    <Name>indigo-tests-vs-py</Name>
-    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterArguments>
+    </InterpreterArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
-    <Environment>path = "./indigo-tests-vs/shared/Win/x64"</Environment>
+    <CommandLineArguments>--preset=win32-2013</CommandLineArguments>
+    <Name>indigo-tests-vs-py</Name>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -2203,6 +2204,12 @@
     <Content Include="Indigo\bingo\sqlserver\Resources\Win\x64\readme.txt" />
     <Content Include="Indigo\bingo\sqlserver\Resources\Win\x86\readme.txt" />
     <Content Include="Indigo\bingo\sqlserver\sql\assembly\readme.txt" />
+    <Content Include="Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeCache.txt" />
+    <Content Include="Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles\TargetDirectories.txt" />
+    <Content Include="Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer\indigo-renderer-test.png" />
+    <Content Include="Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\install_manifest.txt" />
+    <Content Include="Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\install_manifest_shared.txt" />
+    <Content Include="Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\Testing\Temporary\CTestCostData.txt" />
     <Content Include="Indigo\build_scripts\bingo-oracle\CMakeLists.txt" />
     <Content Include="Indigo\build_scripts\bingo-postgres\CMakeLists.txt" />
     <Content Include="Indigo\build_scripts\bingo-sqlserver\CMakeLists.txt" />
@@ -2632,6 +2639,13 @@
     <Folder Include="Indigo\bingo\sqlserver\Resources\Win\x86" />
     <Folder Include="Indigo\bingo\sqlserver\sql\" />
     <Folder Include="Indigo\bingo\sqlserver\sql\assembly" />
+    <Folder Include="Indigo\build\" />
+    <Folder Include="Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE" />
+    <Folder Include="Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\CMakeFiles" />
+    <Folder Include="Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\" />
+    <Folder Include="Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\indigo-renderer\renderer" />
+    <Folder Include="Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\Testing\" />
+    <Folder Include="Indigo\build\indigo_Visual_Studio_12_Win64_Release_NO_STATIC_TRUE\Testing\Temporary" />
     <Folder Include="Indigo\build_scripts" />
     <Folder Include="Indigo\build_scripts\bingo" />
     <Folder Include="Indigo\build_scripts\bingo-oracle" />
@@ -2680,8 +2694,17 @@
     <Folder Include="Indigo\utils\legio\META-INF" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
-    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+    <Interpreter Include="flask\">
+      <Id>{9377fd1f-d17e-490c-8bcd-0f04c87495c5}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>flask (Python 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
