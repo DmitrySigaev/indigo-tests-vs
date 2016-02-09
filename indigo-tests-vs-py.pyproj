@@ -5,10 +5,10 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{880f825d-1ccf-4fe0-8749-48def0131f4c}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>indigo-tests\api\tests\bingo\append.py</StartupFile>
+    <StartupFile>indigo-tests\api\tests\inchi\inchi_basic.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>indigo-tests\api\tests\bingo\</WorkingDirectory>
+    <WorkingDirectory>indigo-tests\api\tests\inchi\</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Web launcher</LaunchProvider>
